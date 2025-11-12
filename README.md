@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Memory Game em React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🧠 Jogo da Memória Desenvolvido com React
 
-## Available Scripts
+O **Memory Game em React** é um projeto de jogo da memória simples, desenvolvido para demonstrar proficiência na biblioteca **React** e seus conceitos fundamentais, como gerenciamento de estado (`useState`), efeitos colaterais (`useEffect`) e roteamento básico de componentes.
 
-In the project directory, you can run:
+### ✨ Funcionalidades em Destaque
 
-### `npm start`
+*   **Lógica do Jogo da Memória:** Implementação completa da mecânica de jogo, incluindo:
+    *   Embaralhamento aleatório das cartas.
+    *   Controle de cartas viradas (máximo de duas por vez).
+    *   Verificação de pares e marcação de cartas encontradas.
+    *   Contagem de tentativas.
+*   **Gerenciamento de Estado:** Uso eficiente de *hooks* do React (`useState`) para gerenciar o estado do jogo (cartas, contagem de tentativas, visibilidade de modais, etc.).
+*   **Componentização:** O projeto é estruturado em componentes reutilizáveis, como `Card`, `StartModal` e `WinPage`, seguindo as melhores práticas do React.
+*   **Roteamento Simples:** O componente principal (`App.js`) gerencia a navegação entre a página inicial (`FirstPage`) e a tela de vitória (`WinPage`) usando lógica de `switch` e estado.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🛠️ Tecnologias Utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+| Tecnologia | Descrição |
+| :--- | :--- |
+| **React** | Biblioteca JavaScript para construção da interface de usuário. |
+| **JavaScript (ES6+)** | Lógica do jogo e manipulação de estado. |
+| **CSS** | Estilização dos componentes do jogo. |
+| **Create React App** | Ferramenta utilizada para inicializar a estrutura do projeto. |
 
-### `npm test`
+### 📂 Estrutura do Projeto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+O projeto segue a estrutura padrão de um aplicativo criado com Create React App, com foco nos seguintes diretórios:
 
-### `npm run build`
+```
+Memory-Game-React/
+├── public/         # Arquivos estáticos (index.html, manifest.json, etc.)
+├── src/
+│   ├── components/ # Componentes reutilizáveis (Card, StartModal, FormModal)
+│   ├── img/        # Imagens das cartas do jogo
+│   ├── pages/      # Componentes de página (firstPage, winPage)
+│   ├── App.js      # Componente principal e lógica de roteamento
+│   └── ...         # Outros arquivos de configuração e estilo
+└── package.json    # Dependências e scripts do projeto
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🚀 Como Executar
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Para rodar o projeto localmente, siga os passos abaixo:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+# 1. Clone o repositório
+git clone https://github.com/BrizidoAndre/Memory-Game-React-.git
 
-### `npm run eject`
+# 2. Navegue até o diretório do projeto
+cd Memory-Game-React-
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# 3. Instale as dependências
+npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# 4. Inicie o servidor de desenvolvimento
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+O jogo estará disponível em `http://localhost:3000` (ou outra porta, se a 3000 estiver ocupada).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 📝 Licença
 
-## Learn More
+Este projeto está sob a licença [MIT](https://choosealicense.com/licenses/mit/). (Assumindo uma licença comum para projetos de código aberto. Se houver uma licença específica, por favor, atualize esta seção.)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+*Desenvolvido por [BrizidoAndre](https://github.com/BrizidoAndre)*
