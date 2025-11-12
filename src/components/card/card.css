@@ -1,0 +1,66 @@
+
+
+.container-card{
+    width: 180px;
+    height: 180px;
+
+    border-radius: 12px;
+    perspective: 1000px;
+
+    position: relative;
+}
+
+.container-card input{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+}
+
+.container-card input:checked  ~ .container-flip{
+    transform:rotateY(180deg);
+}
+
+.container-flip{
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    top:0;
+    left: 0;
+
+    transition: all .4s;
+
+    transform-style: preserve-3d;
+}
+
+
+.container-flip img, .container-flip .card-front{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    left: 0;
+
+    backface-visibility: hidden;
+
+}
+
+.card-front{
+    background: black;
+
+    color: white;
+    font-size: 36px;
+    font-family: "Comic Sans MS";
+
+    display: grid;
+    place-items: center;
+
+
+}
+
+.container-flip img:nth-child(2){
+    transform: rotateY(180deg);
+}

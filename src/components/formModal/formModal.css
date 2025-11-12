@@ -1,0 +1,25 @@
+
+
+.container-input{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 60%;
+
+}
+
+.container-input input{
+    height: 40px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+
+.container-row{
+    display: flex;
+    justify-content: space-between;
+}
+.button-form{
+    align-self: flex-end;
+}
